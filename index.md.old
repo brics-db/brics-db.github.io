@@ -1,0 +1,85 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defs
+layout: default
+---
+
+{:pub: .publist}
+{:ref: .reflist}
+
+## Introduction
+
+It has been known for a long time that hardware components are not perfect and soft errors in terms of single bit flips happen all the time (transient bit flips). Up to now, hardwarebased protection is used to mitigate these single bit flips. However, recent studies have shown that future hardware is becoming less and less reliable and the occurrence of multi-bit flips instead of single bit flips is prevailing [[10](#10), [17](#17), [28](#28), [29](#29)]. For example, repeatedly accessing one memory cell in DRAM modules causes bit flips in physically-adjacent memory cells, whereby one to four bits flips per 64-bit word have been discovered. The reason for this is a hardware failure mechanism called disturbance error [[17](#17), [24](#24)]. In this case, electromagnetic (cell-to-cell) interference leads to bit flips and it is already known that this interference effect increases with smaller feature sizes and higher densities of transistors [[17](#17), [24](#24)]. Furthermore, emerging non-volatile memory technologies like PCM (phase change memory) [[21](#21)], STTMRAM [[20](#20)], and PRAM [[32](#32)] exhibit similar and perhaps even more reliability issues [[14](#14), [15](#15), [22](#22), [24](#24)]. For instance, heat produced by writing one PCM cell can alter the value stored in many nearby cells (e.g., up to 11 cells in a 64 byteblock). Additionally, hardware aging effects will lead to changing bit flip rates at run-time [[10](#10)].
+
+Generally, all hardware components in the nano transistor
+era will show an increasing unreliability behavior [[6](#6), [10](#10), [28](#28)], but
+memory cells are more susceptible than logic gates [[10](#10), [12](#12), [16](#16)].
+To tackle the upcoming increasing reliability concerns, there exist
+a lot of hardware-oriented research activities [[6](#6), [10](#10), [14–16](#14)].
+However, these activities show that hardware-based approaches
+are very effective, but the protection is very challenging and each
+technique introduces large performance, chip area, and power
+overheads [[10](#10), [28](#28), [29](#29)]. Furthermore, the techniques have to be implemented
+in a pessimistic way to cover the aging aspect leading
+usually to an over-provisioning. The whole is made more difficult
+by Dark Silicon [[8](#8)]: billions of transistors can be put on a chip, but
+not all them can be used at the same time. This and the various
+new disruptive interference effects make the reliable hardware
+design and development very challenging, time consuming, and
+very expensive [[28](#28)]. The disadvantages outweigh the advantages
+for hardware-based protection, so that the semiconductor as well
+as hardware/software communities have recently experienced
+a shift towards mitigating these reliability issues also at higher
+software layers, rather than completely mitigating these issues
+only in hardware [[10](#10), [28](#28), [29](#29)].
+
+Consequently, this shift also affects database systems, because
+data as well as query processing have to be protected in software
+accordingly to further guarantee a reliable data management
+on future unreliable hardware. Unfortunately, classical softwarebased
+protection techniques are usually based on data/code redundancy
+using dual or triple modular redundancy (DMR/TMR).
+While DMR only allows error detection, TMR can also correct
+errors [[26](#26), [27](#27)]. However, the application of these techniques
+with respect to in-memory database systems causes a high overhead
+[[18](#18), [26](#26), [27](#27)]. For example, DMR protection requires twice
+as much memory capacity compared to a normal (unprotected)
+setting, since data must be kept twice in different main memory
+locations. Furthermore, every query is redundantly executed
+with an additional voting at the end resulting in a computational
+overhead slightly higher than 2x. Thus, <strong>there is a clear need for
+database-specific protection approaches without sacrificing the
+overall performance too much</strong> [[5](#5)].
+
+## Related Publications
+
+1.  <img alt="image"/>
+
+    Multi-GPU Approximation Methods for Silent Data Corruption of AN-Coding.
+
+    Werner, M.; Kolditz, T.; Karnagel, T.; Habich, D.; Lehner, W.
+
+    In _12th International Workshop on Boolean Problems_, IWSBP 2016, Freiberg, Germany. 2016.
+
+2.  Needles in the haystack – Tackling Bit Flips in Lightweight Data Compression.
+
+    Kolditz, T.; Habich, D.; Kuvaiskii, D.; Lehner, W.; Fetzer, C.
+
+    In _Data Management Technologies and Applications_.Springer International Publishing,135-153,2016.
+{:pub}
+
+## References
+
+1.  asd
+2.  asd
+3.  asd
+4.  asd
+5.  asd
+6.  asd
+7.  asd
+8.  asd
+9.  asd
+10. <a name="10"></a>
+11. asd
+{:ref}
