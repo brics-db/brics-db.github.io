@@ -27,7 +27,7 @@ logo_short: /assets/images/logo_BRICS_short.png
 url: "https://brics-db.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  brics-db
-project_url: "https://brics-db.github.io"
+project_url: "https://github.com/brics-db"
 
 # Build settings
 markdown: kramdown
