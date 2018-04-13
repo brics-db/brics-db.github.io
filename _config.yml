@@ -28,6 +28,7 @@ url: "https://brics-db.github.io" # the base hostname & protocol for your site, 
 # twitter_username: jekyllrb
 github_username:  brics-db
 project_url: "https://github.com/brics-db"
+repository: "brics-db.github.io/brics-db"
 
 # Build settings
 markdown: kramdown

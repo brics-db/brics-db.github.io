@@ -25,7 +25,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 + <img alt="SIGMOD 2018" src="/assets/images/logo_SIGMOD_2018.png" />
   {:image}
 
-  <a name="pub7">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
+  <a name="pub7" href="https://wwwdb.inf.tu-dresden.de/misc/brics/papers/2018%20-%20SIGMOD%20-%20AHEAD.pdf">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Lehner, W.; Werner, M.; de Bruijn, S.T.J.
