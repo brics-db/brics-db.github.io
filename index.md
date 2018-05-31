@@ -20,6 +20,10 @@ So far, this was possible because soft errors were masked by hardware, i.e. eith
 
 The idea is that each layer in the hardware/software stack detects and corrects those errors, for which it is better suited than other layers. For the database domain, this requires novel approaches, as resilience was mainly left to the hardware and operating system layers. For instance, database systems could use context knowledge about data types, algorithms, internal data structures, and inherent redundancy to detect and correct hardware errors when and where it is sensible.
 
+### AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing
+
+We created a main memory-centric column store prototype which does the detection of transient hardware errors (multi-bit flips) in software. Find the sources on [GitHub/brics-db/AHEAD](https://github.com/brics-db/AHEAD){:hreflang="en"}{:target="_blank"}. Other generic software approaches store and process all data twice or thrice (double or triple modular redundancy). In contrast to these application-oblivious techniques, we use a data encoding which is tailored to the actual data size and can be adapted to a desired error rate. More details on the techniques can be found under [AN Coding](/ANCoding){:hreflang="en"} and [Coding Reliability](/coding_reliability){:hreflang="en"} (see navigation bar at the top).
+
 ## Related Publications
 
 + <img alt="SIGMOD 2018" src="/assets/images/logo_SIGMOD_2018.png" />
@@ -176,7 +180,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
     S. Borkar and A. A. Chien.
     {:authors}
 
-    In _Commun. ACM_, 54(5):67–77, 2011
+    In _Commun. ACM_, 54(5):67–77, 2011.
     {:series}
 9.  <a name="ref9" href="https://doi.org/10.1109/MDAT.2017.2695879">Emerging memory technologies.</a>
     {:title}
@@ -208,7 +212,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
     J. Henkel, L. Bauer, N. Dutt, P. Gupta, S. R. Nassif, M. Shafique, M. B. Tahoori, and N. Wehn.
     {:authors}
 
-    In _DAC_, pages 99:1–99:10, 2013
+    In _DAC_, pages 99:1–99:10, 2013.
     {:series}
 13. <a name="ref13" href="https://doi.org/10.1109/MTDT.2004.1327993">Do we need anything more than single bit error correction (ecc)?</a>
     {:title}
@@ -216,7 +220,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
     M. Spica and T. M. Mak.
     {:authors}
 
-    In _MTDT_, pages 111–116, 2004
+    In _MTDT_, pages 111–116, 2004.
     {:series}
 14. <a name="ref14" href="https://doi.org/10.1145/2150976.2150989">Cosmic rays don’t strike twice: understanding the nature of DRAM errors and the implications for system design.</a>
     {:title}

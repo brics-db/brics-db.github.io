@@ -12,6 +12,9 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -34,11 +37,21 @@
           <a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a>
         </p>
         <ul class="additional">
-          <li><a href="/"><br /><strong>Home</strong></a></li>
-          <li><a class="off"><br /><strong>About</strong></a></li>
+          <li><a class="off"><br /><strong>Home</strong></a></li>
+          <li><a href="/about/"><br /><strong>About</strong></a></li>
           <li><a href="{{ site.project_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
+      <section class="navi">
+        <div class="navi">
+          <ul class="navi">
+            <li class="front"><a href="/"><strong><br />Introduction</strong></a></li>
+            <li class="inner"><a class="off"><strong>AN<br />Coding</strong></a></li>
+            <li class="inner"><a href="/coding_reliability"><strong>Coding<br />Reliability</strong></a></li>
+            <li class="back"><a href="/coding_benchmark"><strong>Coding<br />Benchmark</strong></a></li>
+          </ul>
+        </div>
+      </section>
       <section>
 
       {{ content }}
