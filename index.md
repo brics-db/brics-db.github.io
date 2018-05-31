@@ -114,7 +114,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
 ## References
 
-1.  <a name="ref1">The beckman report on database research</a>
+1.  <a name="ref1" href="https://doi.org/10.1145/2845915">The beckman report on database research</a>
     {:title}
 
     D. Abadi et al.
@@ -122,7 +122,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     Commun. ACM, 59(2):92–99, 2016.
     {:series}
-2.  <a name="ref2">Breaking the memory wall in MonetDB.</a>
+2.  <a name="ref2" href="https://doi.org/10.1145/1409360.1409380">Breaking the memory wall in MonetDB.</a>
     {:title}
 
     P. A. Boncz, M. L. Kersten, and S. Manegold.
@@ -130,7 +130,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _Commun. ACM_, 51(12):77–85, 2008.
     {:series}
-3.  <a name="ref3">Robust Query Processing in Co-Processor-Accelerated Databases.</a>
+3.  <a name="ref3" href="https://doi.org/10.1145/2882903.2882936">Robust Query Processing in Co-Processor-Accelerated Databases.</a>
     {:title}
 
     S. Breß, H. Funke, and J. Teubner.
@@ -138,7 +138,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _SIGMOD_, pages 1891–1906, 2016.
     {:series}
-4.  <a name="ref4">Query processing on Smart SSDs: Opportunities and Challenges.</a>
+4.  <a name="ref4" href="https://doi.org/10.1145/2463676.2465295">Query processing on Smart SSDs: Opportunities and Challenges.</a>
     {:title}
 
     J. Do, Y. Kee, J. M. Patel, C. Park, K. Park, and D. J. DeWitt.
@@ -146,7 +146,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _SIGMOD_, pages 1221–1230, 2013
     {:series}
-5.  <a name="ref5">Adaptive work placement for query processing on heterogeneous computing resources.</a>
+5.  <a name="ref5" href="https://doi.org/10.14778/3067421.3067423">Adaptive work placement for query processing on heterogeneous computing resources.</a>
     {:title}
 
     T. Karnagel, D. Habich, and W. Lehner.
@@ -154,7 +154,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _PVLDB_, 10(7):733–744, 2017.
     {:series}
-6.  <a name="ref6">Accelerating relational databases by leveraging remote memory and RDMA.</a>
+6.  <a name="ref6" href="https://doi.org/10.1145/2882903.2882949">Accelerating relational databases by leveraging remote memory and RDMA.</a>
     {:title}
 
     F. Li, S. Das, M. Syamala, and V. R. Narasayya.
@@ -162,7 +162,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _SIGMOD_, pages 355–370, 2016.
     {:series}
-7.  <a name="ref7">FPTree: A hybrid SCM-DRAM persistent and concurrent b-tree for storage class memory.</a>
+7.  <a name="ref7" href="https://doi.org/10.1145/2882903.2915251">FPTree: A hybrid SCM-DRAM persistent and concurrent b-tree for storage class memory.</a>
     {:title}
 
     I. Oukid, J. Lasperas, A. Nica, T. Willhalm, and W. Lehner.
@@ -170,7 +170,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _SIGMOD_, pages 371–386, 2016.
     {:series}
-8.  <a name="ref8">The future of microprocessors.</a>
+8.  <a name="ref8" href="https://doi.org/10.1145/1941487.1941507">The future of microprocessors.</a>
     {:title}
 
     S. Borkar and A. A. Chien.
@@ -178,7 +178,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _Commun. ACM_, 54(5):67–77, 2011
     {:series}
-9.  <a name="ref9">Emerging memory technologies.</a>
+9.  <a name="ref9" href="https://doi.org/10.1109/MDAT.2017.2695879">Emerging memory technologies.</a>
     {:title}
 
     J. Henkel.
@@ -186,7 +186,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _IEEE Design & Test_, 34(3):4–5, 2017.
     {:series}
-10. <a name="ref10">New microarchitecture challenges in the coming generations of CMOS process technologies.</a>
+10. <a name="ref10" href="https://dl.acm.org/citation.cfm?id=320082">New microarchitecture challenges in the coming generations of CMOS process technologies.</a>
     {:title}
 
     F. J. Pollack.
@@ -194,7 +194,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _Symposium on Microarchitecture_, page 2, 1999.
     {:series}
-11. <a name="ref11">Designing reliable systems from unreliable components: The challenges of transistor variability and degradation.</a>
+11. <a name="ref11" href="https://doi.org/10.1109/MM.2005.110">Designing reliable systems from unreliable components: The challenges of transistor variability and degradation.</a>
     {:title}
 
     S. Y. Borkar.
@@ -202,7 +202,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _IEEE Micro_, 25(6):10–16, 2005.
     {:series}
-12. <a name="ref12">Reliable on-chip systems in the nano-era: lessons learnt and future trends.</a>
+12. <a name="ref12" href="https://doi.org/10.1145/2463209.2488857">Reliable on-chip systems in the nano-era: lessons learnt and future trends.</a>
     {:title}
 
     J. Henkel, L. Bauer, N. Dutt, P. Gupta, S. R. Nassif, M. Shafique, M. B. Tahoori, and N. Wehn.
@@ -210,7 +210,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _DAC_, pages 99:1–99:10, 2013
     {:series}
-13. <a name="ref13">Do we need anything more than single bit error correction (ecc)?</a>
+13. <a name="ref13" href="https://doi.org/10.1109/MTDT.2004.1327993">Do we need anything more than single bit error correction (ecc)?</a>
     {:title}
 
     M. Spica and T. M. Mak.
@@ -218,7 +218,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _MTDT_, pages 111–116, 2004
     {:series}
-14. <a name="ref14">Cosmic rays don’t strike twice: understanding the nature of DRAM errors and the implications for system design.</a>
+14. <a name="ref14" href="https://doi.org/10.1145/2150976.2150989">Cosmic rays don’t strike twice: understanding the nature of DRAM errors and the implications for system design.</a>
     {:title}
 
     A. A. Hwang, I. A. Stefanovici, and B. Schroeder.
@@ -226,7 +226,7 @@ The idea is that each layer in the hardware/software stack detects and corrects 
 
     In _ASPLOS_, pages 111–122, 2012.
     {:series}
-15. <a name="ref15">Reliable Software for Unreliable Hardware – A Cross Layer Perspective.</a>
+15. <a name="ref15" href="https://doi.org/10.1007/978-3-319-25772-3">Reliable Software for Unreliable Hardware – A Cross Layer Perspective.</a>
     {:title}
 
     S. Rehman, M. Shafique, and J. Henkel.

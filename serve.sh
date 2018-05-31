@@ -6,5 +6,5 @@
 #
 # use "bundle update" to update the plugins used for this github.io page
 
-bundle exec jekyll serve
+bundle exec jekyll serve --incremental
 
