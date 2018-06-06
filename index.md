@@ -12,7 +12,7 @@ layout: index
 {:authors: .authors}
 {:series: .series}
 
-## Introduction
+## <center>Introduction</center>
 
 The key objective of database systems is to reliably manage data, while high query throughput and low query latency are core requirements [[1](#ref1)]. To satisfy these requirements for a constantly increasing amount of data, database systems constantly adapt to new hardware features [[2](#ref2), [3](#ref3), [4](#ref4), [5](#ref5), [6](#ref6), [7](#ref7)], for instance: new instruction sets, increasing core counts, changing core/cache topologies, increasing DRAM bandwidths, or new persistence technologies (nvRAM) [[8](#ref8), [9](#ref9), [10](#ref10)]. These advances come with a backdraw, though: for a long time it has been known that hardware is subject to soft and hard errors [[11](#ref11), [12](#ref12), [13](#ref13)]. Soft errors are also called bit flips, which may occur due to cosmic rays, heat, hardware aging, or electrical crosstalk, which, in turn, is due to the ongoing miniaturization of integrated curcuits [[11](#ref11), [14](#ref14)]. Hardware aging even leads to increasing error rates during a system’s run-time. Despite increasing error rates, database research could focus on improving performance (higher throughput, lower latency) by leveraging hardware improvements, without considering any side effects.
 

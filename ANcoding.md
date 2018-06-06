@@ -9,7 +9,7 @@ layout: ANcoding
 {:authors: .authors}
 {:series: .series}
 
-## AN Coding
+## <center>AN Coding</center>
 
 The core of our techniques for detecting transient hardware errors (multi-bit flips) in software are based on an _arithmetic_ coding called AN Coding. It requires to encode each and every integer value and  consequently allows to detect bit flips in each and every integer value, as well. AN Coding only works on integers, but this is not a limitation, because we can view any information as a single integer or a sequence of integers (e.g. strings).
 
@@ -49,7 +49,7 @@ Suppose we have some arbitrary integer (data) $$d$$ which we want to encode. AN 
   </tbody>
 </table>
 
-The Original coding operations are what used to be the standard way. Obviously, the division (decoding) and modulus (error detection) operations are painfully slow, even on modern CPUs. We realized that by restricting the parameter $$A$$ to _odd_ values only, we can use the _modular multiplicative inverse_ of $$A$$, which results in the Improved coding operations for decoding and error detection shown just below.
+The Original coding operations are what used to be the standard way. Obviously, the division (decoding) and modulus (error detection) operations are painfully slow, even on modern CPUs. We realized that by restricting the parameter $$A$$ to _odd_ values only, we can use the _modular multiplicative inverse_ of $$A$$, which results in the Improved coding operations for decoding and error detection shown just below. This works, because CPUs implicitly compute in [residue class rings, or quotient rings](https://en.wikipedia.org/wiki/Quotient_ring), which means that any arithmetic operation on integers is implicitly done $$ \text{mod} 2^n $$, where $$ n $$ is the number of data bits (i.e. register width). To the best of our knowledge, we are the first in more than 60 years since the first mentioning of AN codes to publish this nice mathematical solution.
 
 <table>
   <colgroup>
@@ -83,6 +83,65 @@ The Original coding operations are what used to be the standard way. Obviously, 
 </table>
 
 Using the inverse works, because CPUs' ALUs implicitly compute in residue class rings. This means that any arithemtic operation is implicitly $$ \text{mod } 2^n $$, where $$ n $$ is the data (register) width in bits, i.e. typically $$8$$, $$16$$, $$32$$, or $$64$$. For the improved error detection, we need to know the exact data _type_ of $$ d $$. From that, we know the smallest and largest _encodable_ values from the original data domain.
+
+## Related Publications
+
++ <img alt="SIGMOD 2018" src="/assets/images/logo_SIGMOD_2018.png" />
+  {:image}
+
+  <a name="pub5" href="https://wwwdb.inf.tu-dresden.de/misc/brics/papers/2018%20-%20SIGMOD%20-%20AHEAD.pdf">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
+  {:title}
+
+  Kolditz, T.; Habich, D.; Lehner, W.; Werner, M.; de Bruijn, S.T.J.
+  {:authors}
+
+  In _SIGMOD/PODS ’18: 2018 International Conference on Management of Data_, June 10-15, 2018,
+  {:series}
++ <img alt="FIBD 2018" src="/assets/images/logo_FIBD_2018.jpeg" />
+  {:image}
+
+  <a name="pub4" href="http://www.cambridgescholars.com/further-improvements-in-the-boolean-domain">Multi-GPU Approximation for Silent Data Corruption of AN Codes.</a>
+  {:title}
+
+  Werner, M.; Kolditz, T.; Karnagel, T.; Habich, D.; Lehner, W.
+  {:authors}
+
+  In _Further Improvements in the Boolean Domain_. Cambridge Scholars Publishing, 2018.
+  {:series}
++ <img alt="IWSBP 2016" src="/assets/images/logo_IWSBP.png" />
+  {:image}
+
+  <a name="pub3" href="https://wwwdb.inf.tu-dresden.de/wp-content/uploads/2016-IWSBP-Multi-GPU-Approximation-Methods-for-Silent-Data-Corruption-of-AN-Codes.pdf">Multi-GPU Approximation Methods for Silent Data Corruption of AN-Coding.</a>
+  {:title}
+
+  Werner, M.; Kolditz, T.; Karnagel, T.; Habich, D.; Lehner, W.
+  {:authors}
+
+  In _12th International Workshop on Boolean Problems (IWSBP)_, Freiberg, Germany. 2016.
+  {:series}
++ <img alt="image" src="/assets/images/logo_CCIS_2016.jpg" />
+  {:image}
+
+  <a name="pub2" href="https://link.springer.com/chapter/10.1007/978-3-319-30162-4_9">Needles in the haystack – Tackling Bit Flips in Lightweight Data Compression.</a>
+  {:title}
+
+  Kolditz, T.; Habich, D.; Kuvaiskii, D.; Lehner, W.; Fetzer, C.
+  {:authors}
+
+  In _Data Management Technologies and Applications_. Springer International Publishing, 135-153, 2016.
+  {:series}
++ <img alt="image" src="/assets/images/logo_DATA_2015.png" />
+  {:image}
+
+  <a name="pub1" href="http://www.springer.com/de/book/9783319301617">Resiliency-aware Data Compression for In-memory Database Systems.</a>
+  {:title}
+
+  Kolditz, T.; Habich, D.; Damme, P.; Lehner, W.; Kuvaiskii, D.; Fetzer, C.
+  {:authors}
+
+  In _Proceedings of 4th International Conference on Data Management Technologies and Applications (DATA)_, 326-331, 2015.
+  {:series}
+{:pub}
 
 ## References
 
