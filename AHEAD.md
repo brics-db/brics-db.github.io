@@ -21,9 +21,9 @@ When do we do bit flip detection?
 
 ## SSB results
 
-We evaluated AHEAD using the [Star Schema Benchmark (SSB)](#ref1).
+We evaluated AHEAD using the Star Schema Benchmark (SSB)[[1]](#ref1).
 
-You can download the raw output, plot scripts and other material we used for our SIGMOD'18 paper [here](https://wwwdb.inf.tu-dresden.de/misc/brics/SIGMOD18ssb.zip).
+You can download the raw output, plot scripts and other material we used for our SIGMOD'18 paper [here](https://wwwdb.inf.tu-dresden.de/misc/brics/SIGMOD18ssb.zip). Inside this zip file is another "data.zip" file, which contains the raw output. Our evaluation script "run.sh" does all the hard work of sifting through that data and extracting the information we needed for the <em>AHEAD</em> paper. Feel free to adapt that script to your needs. Keep in mind that the script automatically redirects the output to files and does log rotation for these output files (lower numbers are older!).
 
 ## Contributing and Feedback
 
