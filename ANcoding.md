@@ -89,7 +89,7 @@ Using the inverse works, because CPUs' ALUs implicitly compute in residue class 
 + <img alt="SIGMOD 2018" src="/assets/images/logo_SIGMOD_2018.png" />
   {:image}
 
-  <a name="pub5" href="https://wwwdb.inf.tu-dresden.de/misc/brics/papers/2018%20-%20SIGMOD%20-%20AHEAD.pdf">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
+  <a name="pub5" href="https://doi.org/10.1145/3183713.3183740" target="_blank">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Lehner, W.; Werner, M.; de Bruijn, S.T.J.
@@ -100,7 +100,7 @@ Using the inverse works, because CPUs' ALUs implicitly compute in residue class 
 + <img alt="FIBD 2018" src="/assets/images/logo_FIBD_2018.jpeg" />
   {:image}
 
-  <a name="pub4" href="http://www.cambridgescholars.com/further-improvements-in-the-boolean-domain">Multi-GPU Approximation for Silent Data Corruption of AN Codes.</a>
+  <a name="pub4" href="http://www.cambridgescholars.com/further-improvements-in-the-boolean-domain" target="_blank">Multi-GPU Approximation for Silent Data Corruption of AN Codes.</a>
   {:title}
 
   Werner, M.; Kolditz, T.; Karnagel, T.; Habich, D.; Lehner, W.
@@ -111,7 +111,7 @@ Using the inverse works, because CPUs' ALUs implicitly compute in residue class 
 + <img alt="IWSBP 2016" src="/assets/images/logo_IWSBP.png" />
   {:image}
 
-  <a name="pub3" href="https://wwwdb.inf.tu-dresden.de/wp-content/uploads/2016-IWSBP-Multi-GPU-Approximation-Methods-for-Silent-Data-Corruption-of-AN-Codes.pdf">Multi-GPU Approximation Methods for Silent Data Corruption of AN-Coding.</a>
+  <a name="pub3" href="https://wwwdb.inf.tu-dresden.de/wp-content/uploads/2016-IWSBP-Multi-GPU-Approximation-Methods-for-Silent-Data-Corruption-of-AN-Codes.pdf" target="_blank">Multi-GPU Approximation Methods for Silent Data Corruption of AN-Coding.</a>
   {:title}
 
   Werner, M.; Kolditz, T.; Karnagel, T.; Habich, D.; Lehner, W.
@@ -122,7 +122,7 @@ Using the inverse works, because CPUs' ALUs implicitly compute in residue class 
 + <img alt="image" src="/assets/images/logo_CCIS_2016.jpg" />
   {:image}
 
-  <a name="pub2" href="https://link.springer.com/chapter/10.1007/978-3-319-30162-4_9">Needles in the haystack – Tackling Bit Flips in Lightweight Data Compression.</a>
+  <a name="pub2" href="https://link.springer.com/chapter/10.1007/978-3-319-30162-4_9" target="_blank">Needles in the haystack – Tackling Bit Flips in Lightweight Data Compression.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Kuvaiskii, D.; Lehner, W.; Fetzer, C.
@@ -133,7 +133,7 @@ Using the inverse works, because CPUs' ALUs implicitly compute in residue class 
 + <img alt="image" src="/assets/images/logo_DATA_2015.png" />
   {:image}
 
-  <a name="pub1" href="http://www.springer.com/de/book/9783319301617">Resiliency-aware Data Compression for In-memory Database Systems.</a>
+  <a name="pub1" href="http://www.springer.com/de/book/9783319301617" target="_blank">Resiliency-aware Data Compression for In-memory Database Systems.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Damme, P.; Lehner, W.; Kuvaiskii, D.; Fetzer, C.

@@ -36,7 +36,7 @@ Please feel free to fork on [github](https://github.com/brics-db/AHEAD), send pu
 + <img alt="SIGMOD 2018" src="/assets/images/logo_SIGMOD_2018.png" />
   {:image}
 
-  <a name="pub1" href="https://wwwdb.inf.tu-dresden.de/misc/brics/papers/2018%20-%20SIGMOD%20-%20AHEAD.pdf">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
+  <a name="pub1" href="https://doi.org/10.1145/3183713.3183740" target="_blank">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Lehner, W.; Werner, M.; de Bruijn, S.T.J.
@@ -45,7 +45,7 @@ Please feel free to fork on [github](https://github.com/brics-db/AHEAD), send pu
 
 ## References
 
-1.  <a name="ref1" href="https://doi.org/10.1007/978-3-642-10424-4_17">The Star Schema Benchmark and Augmented Fact Table Indexing</a>
+1.  <a name="ref1" href="https://doi.org/10.1007/978-3-642-10424-4_17" target="_blank">The Star Schema Benchmark and Augmented Fact Table Indexing</a>
     {:title}
 
     Patrick O’Neil, Elizabeth O’Neil, Xuedong Chen, Stephen Revilak

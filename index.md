@@ -29,7 +29,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="SIGMOD 2018" src="/assets/images/logo_SIGMOD_2018.png" />
   {:image}
 
-  <a name="pub7" href="https://wwwdb.inf.tu-dresden.de/misc/brics/papers/2018%20-%20SIGMOD%20-%20AHEAD.pdf">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
+  <a name="pub7" href="https://doi.org/10.1145/3183713.3183740" target="_blank">AHEAD: Adaptable Data Hardening for On-the-Fly Hardware Error Detection during Database Query Processing.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Lehner, W.; Werner, M.; de Bruijn, S.T.J.
@@ -40,7 +40,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="FIBD 2018" src="/assets/images/logo_FIBD_2018.jpeg" />
   {:image}
 
-  <a name="pub6" href="http://www.cambridgescholars.com/further-improvements-in-the-boolean-domain">Multi-GPU Approximation for Silent Data Corruption of AN Codes.</a>
+  <a name="pub6" href="http://www.cambridgescholars.com/further-improvements-in-the-boolean-domain" target="_blank">Multi-GPU Approximation for Silent Data Corruption of AN Codes.</a>
   {:title}
 
   Werner, M.; Kolditz, T.; Karnagel, T.; Habich, D.; Lehner, W.
@@ -51,7 +51,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="IWSBP 2016" src="/assets/images/logo_IWSBP.png" />
   {:image}
 
-  <a name="pub6" href="https://wwwdb.inf.tu-dresden.de/wp-content/uploads/2016-IWSBP-Multi-GPU-Approximation-Methods-for-Silent-Data-Corruption-of-AN-Codes.pdf">Multi-GPU Approximation Methods for Silent Data Corruption of AN-Coding.</a>
+  <a name="pub6" href="https://wwwdb.inf.tu-dresden.de/wp-content/uploads/2016-IWSBP-Multi-GPU-Approximation-Methods-for-Silent-Data-Corruption-of-AN-Codes.pdf" target="_blank">Multi-GPU Approximation Methods for Silent Data Corruption of AN-Coding.</a>
   {:title}
 
   Werner, M.; Kolditz, T.; Karnagel, T.; Habich, D.; Lehner, W.
@@ -62,7 +62,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="image" src="/assets/images/logo_CCIS_2016.jpg" />
   {:image}
 
-  <a name="pub5" href="https://link.springer.com/chapter/10.1007/978-3-319-30162-4_9">Needles in the haystack – Tackling Bit Flips in Lightweight Data Compression.</a>
+  <a name="pub5" href="https://doi.org/10.1007/978-3-319-30162-4_9" target="_blank">Needles in the haystack – Tackling Bit Flips in Lightweight Data Compression.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Kuvaiskii, D.; Lehner, W.; Fetzer, C.
@@ -73,7 +73,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="image" src="/assets/images/logo_DATA_2015.png" />
   {:image}
 
-  <a name="pub4" href="http://www.springer.com/de/book/9783319301617">Resiliency-aware Data Compression for In-memory Database Systems.</a>
+  <a name="pub4" href="https://doi.org/10.1007/978-3-319-30162-4" target="_blank">Resiliency-aware Data Compression for In-memory Database Systems.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Damme, P.; Lehner, W.; Kuvaiskii, D.; Fetzer, C.
@@ -84,7 +84,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="BTW 2015" src="/assets/images/logo_BTW_2015.png" />
   {:image}
 
-  <a name="pub3" href="http://www.btw-2015.de/res/proceedings/Hauptband/Demo/Kolditz-Online_Bit_Flip_Detection.pdf">Online Bit Flip Detection for In-Memory B-Trees Live!.</a>
+  <a name="pub3" href="http://www.btw-2015.de/res/proceedings/Hauptband/Demo/Kolditz-Online_Bit_Flip_Detection.pdf" target="_blank">Online Bit Flip Detection for In-Memory B-Trees Live!.</a>
   {:title}
 
   Kolditz, T.; Schlegel, B.; Habich, D.; Lehner, W.
@@ -95,7 +95,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="DaMoN 2014" src="/assets/images/logo_DAMON.png" />
   {:image}
 
-  <a name="pub2" href="dl.acm.org/citation.cfm?id=2619233">Online bit flip detection for in-memory B-trees on unreliable hardware.</a>
+  <a name="pub2" href="https://doi.org/10.1145/2619228.2619233" target="_blank">Online bit flip detection for in-memory B-trees on unreliable hardware.</a>
   {:title}
 
   Kolditz, T.; Kissinger, T.; Schlegel, B.; Habich, D.; Lehner, W.
@@ -106,7 +106,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="VLDB 2011" src="/assets/images/logo_VLDB_2011.png" />
   {:image}
 
-  <a name="pub1" href="www.vldb.org/pvldb/vol4/p1462-boehm.pdf">Resiliency-Aware Data Management.</a>
+  <a name="pub1" href="http://www.vldb.org/pvldb/vol4/p1462-boehm.pdf" target="_blank">Resiliency-Aware Data Management.</a>
   {:title}
 
   Lehner, W.; Böhm, M.; Fetzer, C.
@@ -118,7 +118,7 @@ We created a main memory-centric column store prototype which does the detection
 
 ## References
 
-1.  <a name="ref1" href="https://doi.org/10.1145/2845915">The beckman report on database research</a>
+1.  <a name="ref1" href="https://doi.org/10.1145/2845915" target="_blank">The beckman report on database research</a>
     {:title}
 
     D. Abadi et al.
@@ -126,7 +126,7 @@ We created a main memory-centric column store prototype which does the detection
 
     Commun. ACM, 59(2):92–99, 2016.
     {:series}
-2.  <a name="ref2" href="https://doi.org/10.1145/1409360.1409380">Breaking the memory wall in MonetDB.</a>
+2.  <a name="ref2" href="https://doi.org/10.1145/1409360.1409380" target="_blank">Breaking the memory wall in MonetDB.</a>
     {:title}
 
     P. A. Boncz, M. L. Kersten, and S. Manegold.
@@ -134,7 +134,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _Commun. ACM_, 51(12):77–85, 2008.
     {:series}
-3.  <a name="ref3" href="https://doi.org/10.1145/2882903.2882936">Robust Query Processing in Co-Processor-Accelerated Databases.</a>
+3.  <a name="ref3" href="https://doi.org/10.1145/2882903.2882936" target="_blank">Robust Query Processing in Co-Processor-Accelerated Databases.</a>
     {:title}
 
     S. Breß, H. Funke, and J. Teubner.
@@ -142,7 +142,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _SIGMOD_, pages 1891–1906, 2016.
     {:series}
-4.  <a name="ref4" href="https://doi.org/10.1145/2463676.2465295">Query processing on Smart SSDs: Opportunities and Challenges.</a>
+4.  <a name="ref4" href="https://doi.org/10.1145/2463676.2465295" target="_blank">Query processing on Smart SSDs: Opportunities and Challenges.</a>
     {:title}
 
     J. Do, Y. Kee, J. M. Patel, C. Park, K. Park, and D. J. DeWitt.
@@ -150,7 +150,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _SIGMOD_, pages 1221–1230, 2013
     {:series}
-5.  <a name="ref5" href="https://doi.org/10.14778/3067421.3067423">Adaptive work placement for query processing on heterogeneous computing resources.</a>
+5.  <a name="ref5" href="https://doi.org/10.14778/3067421.3067423" target="_blank">Adaptive work placement for query processing on heterogeneous computing resources.</a>
     {:title}
 
     T. Karnagel, D. Habich, and W. Lehner.
@@ -158,7 +158,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _PVLDB_, 10(7):733–744, 2017.
     {:series}
-6.  <a name="ref6" href="https://doi.org/10.1145/2882903.2882949">Accelerating relational databases by leveraging remote memory and RDMA.</a>
+6.  <a name="ref6" href="https://doi.org/10.1145/2882903.2882949" target="_blank">Accelerating relational databases by leveraging remote memory and RDMA.</a>
     {:title}
 
     F. Li, S. Das, M. Syamala, and V. R. Narasayya.
@@ -166,7 +166,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _SIGMOD_, pages 355–370, 2016.
     {:series}
-7.  <a name="ref7" href="https://doi.org/10.1145/2882903.2915251">FPTree: A hybrid SCM-DRAM persistent and concurrent b-tree for storage class memory.</a>
+7.  <a name="ref7" href="https://doi.org/10.1145/2882903.2915251" target="_blank">FPTree: A hybrid SCM-DRAM persistent and concurrent b-tree for storage class memory.</a>
     {:title}
 
     I. Oukid, J. Lasperas, A. Nica, T. Willhalm, and W. Lehner.
@@ -174,7 +174,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _SIGMOD_, pages 371–386, 2016.
     {:series}
-8.  <a name="ref8" href="https://doi.org/10.1145/1941487.1941507">The future of microprocessors.</a>
+8.  <a name="ref8" href="https://doi.org/10.1145/1941487.1941507" target="_blank">The future of microprocessors.</a>
     {:title}
 
     S. Borkar and A. A. Chien.
@@ -182,7 +182,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _Commun. ACM_, 54(5):67–77, 2011.
     {:series}
-9.  <a name="ref9" href="https://doi.org/10.1109/MDAT.2017.2695879">Emerging memory technologies.</a>
+9.  <a name="ref9" href="https://doi.org/10.1109/MDAT.2017.2695879" target="_blank">Emerging memory technologies.</a>
     {:title}
 
     J. Henkel.
@@ -190,7 +190,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _IEEE Design & Test_, 34(3):4–5, 2017.
     {:series}
-10. <a name="ref10" href="https://dl.acm.org/citation.cfm?id=320082">New microarchitecture challenges in the coming generations of CMOS process technologies.</a>
+10. <a name="ref10" href="https://dl.acm.org/citation.cfm?id=320082" target="_blank">New microarchitecture challenges in the coming generations of CMOS process technologies.</a>
     {:title}
 
     F. J. Pollack.
@@ -198,7 +198,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _Symposium on Microarchitecture_, page 2, 1999.
     {:series}
-11. <a name="ref11" href="https://doi.org/10.1109/MM.2005.110">Designing reliable systems from unreliable components: The challenges of transistor variability and degradation.</a>
+11. <a name="ref11" href="https://doi.org/10.1109/MM.2005.110" target="_blank">Designing reliable systems from unreliable components: The challenges of transistor variability and degradation.</a>
     {:title}
 
     S. Y. Borkar.
@@ -206,7 +206,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _IEEE Micro_, 25(6):10–16, 2005.
     {:series}
-12. <a name="ref12" href="https://doi.org/10.1145/2463209.2488857">Reliable on-chip systems in the nano-era: lessons learnt and future trends.</a>
+12. <a name="ref12" href="https://doi.org/10.1145/2463209.2488857" target="_blank">Reliable on-chip systems in the nano-era: lessons learnt and future trends.</a>
     {:title}
 
     J. Henkel, L. Bauer, N. Dutt, P. Gupta, S. R. Nassif, M. Shafique, M. B. Tahoori, and N. Wehn.
@@ -214,7 +214,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _DAC_, pages 99:1–99:10, 2013.
     {:series}
-13. <a name="ref13" href="https://doi.org/10.1109/MTDT.2004.1327993">Do we need anything more than single bit error correction (ecc)?</a>
+13. <a name="ref13" href="https://doi.org/10.1109/MTDT.2004.1327993" target="_blank">Do we need anything more than single bit error correction (ecc)?</a>
     {:title}
 
     M. Spica and T. M. Mak.
@@ -222,7 +222,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _MTDT_, pages 111–116, 2004.
     {:series}
-14. <a name="ref14" href="https://doi.org/10.1145/2150976.2150989">Cosmic rays don’t strike twice: understanding the nature of DRAM errors and the implications for system design.</a>
+14. <a name="ref14" href="https://doi.org/10.1145/2150976.2150989" target="_blank">Cosmic rays don’t strike twice: understanding the nature of DRAM errors and the implications for system design.</a>
     {:title}
 
     A. A. Hwang, I. A. Stefanovici, and B. Schroeder.
@@ -230,7 +230,7 @@ We created a main memory-centric column store prototype which does the detection
 
     In _ASPLOS_, pages 111–122, 2012.
     {:series}
-15. <a name="ref15" href="https://doi.org/10.1007/978-3-319-25772-3">Reliable Software for Unreliable Hardware – A Cross Layer Perspective.</a>
+15. <a name="ref15" href="https://doi.org/10.1007/978-3-319-25772-3" target="_blank">Reliable Software for Unreliable Hardware – A Cross Layer Perspective.</a>
     {:title}
 
     S. Rehman, M. Shafique, and J. Henkel.
