@@ -73,7 +73,7 @@ We created a main memory-centric column store prototype which does the detection
 + <img alt="image" src="/assets/images/logo_DATA_2015.png" />
   {:image}
 
-  <a name="pub4" href="https://doi.org/10.1007/978-3-319-30162-4" target="_blank">Resiliency-aware Data Compression for In-memory Database Systems.</a>
+  <a name="pub4" href="https://doi.org/10.5220/0005557303260331" target="_blank">Resiliency-aware Data Compression for In-memory Database Systems.</a>
   {:title}
 
   Kolditz, T.; Habich, D.; Damme, P.; Lehner, W.; Kuvaiskii, D.; Fetzer, C.
