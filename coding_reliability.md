@@ -10,9 +10,18 @@ On these pages we provide our findings and results regarding code reliability. M
 
 For AN coding, the choice of the code parameter $$A$$ is the most crucial part. As it turned out in our studies, for each <em>data bit width</em> each A behaves differently! Since in-memory database systems operate on each individual data width ranging from 1 to 32 bits, we had to compute the "goodness" of each A for all these bit widths.
 
+For a given $$A$$ and data bit width $$k$$, we can compute the probability of silent data corruption (SDC) for a certain bit flip weight $$b$$. This means, how likely it is for a specific AN code (with given $$k$$ and $$A$$) that a $$b$$-bit flip results in another code word and is therefore not detectable.
+
 For each combination of data bit width ($$k$$) and bit width of the parameter $$A$$ ($$h$$) we want a "best" $$A$$. We define "goodness" as giving a maximum lower bound of the detectable bit flip weight. In other words, it is those $$A$$ which generate AN codes of width $$n=h+k$$ with _largest_ minimal Hamming distance. For each combination of $$k$$ and $$h$$, there is typically a _set_ of candidate $$A$$s, from which _the_ best $$A$$ needs to be selected. To select a single best $$A$$, you can define optimization functions and an optimality criterion. In our case, we define two optimization functions:
 
-1. For a given data width $$k$$ and some $$A$$, this functions returns the lower bound of the detectable bit flip weight: $$\eta(k,A) = \max b \quad, \varphi_x^{k,A}=0 \wedge 0 \leq x \leq b$$
+1. For a given data width $$k$$ and some $$A$$, this functions returns the lower bound of the detectable bit flip weight:<br/>$$\eta(k,A) = \max b \quad, \varphi_x^{k,A}=0 \wedge 0 \leq x \leq b$$<br/>This essentially defines the candidate set.
+2. From that candidate set, we select that $$A$$ which has the lowest first non-zero probability of silent data corruption (SDC):<br/>$$\psi(k,A) = \varphi_{b=\eta(k,A)+1}^{k,A}$$
+
+Using these optimization functions, we define our optimality criterion:
+
+$$\Psi_\eta(k,h)=\max \big( \eta(k,A), 1 - \psi(k,A) \big) \quad,~|A| = h$$
+
+It takes all (computed) $$A$$s of a given parameter bit width ($$k$$) and checks for the largest minimal detectable bit flip weight (the guarantee to detect all $$1 \dots x$$-bit flips, with maximum x among the available $$A$$s) and the smallest first non-zero SDC probability.
 
 ## Contributing and Feedback
 
