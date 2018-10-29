@@ -23,24 +23,191 @@ $$\Psi_\eta(k,h)=\max \big( \eta(k,A), 1 - \psi(k,A) \big) \quad,~|A| = h$$
 
 It takes all (computed) $$A$$s of a given parameter bit width ($$k$$) and checks for the largest minimal detectable bit flip weight (the guarantee to detect all $$1 \dots x$$-bit flips, with maximum x among the available $$A$$s) and the smallest first non-zero SDC probability.
 
-|   |_\8. $$k$$ |
-| $$|A|$$  | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-|---|---|---|---|---|---|---|---|---|
-|  2 |     3  |     3  |     3  |     3  |     3  |     3  |     3  |     3  |
-|  3 |     7  |     7  |     7  |     7  |     7  |     7  |     7  |     7  |
-|  4 |    15  |    13  |    13  |    13  |    13  |    13  |    13  |    13  |
-|  5 |    31  |    29  |    29  |    27  |    29  |    29  |    29  |    29  |
-|  6 |    63  |    53  |    45  |    45  |    45  |    45  |    59  |    59  |
-|  7 |   127  |   117  |    89  |    89  |   117  |   115  |   115  |   115  |
-|  8 |   255  |   213  |   229  |   229  |   233  |   233  |   217  |   233  |
-|  9 |   511  |   469  |   467  |   467  |   443  |   471  |   471  |   487  |
-| 10 |  1023  |   853  |   917  |   933  |   933  |   809  |   933  |   857  |
-| 11 |  2047  |  1877  |  1837  |  1867  |  1909  |  1899  |  1803  |  1939  |
-| 12 |  4095  |  3285  |  3673  |  3737  |  3787  |  3813  |  3813  |  3813  |
-| 13 |  8191  |  6613  |  7349  |  6777  |  7085  |  7837  |  7637  |  7463  |
-| 14 | 16383  | 13141  | 13779  | 14937  | 15221  | 14159  | 13963  | 13963  |
-| 15 | 32767  | 26453  | 23733  | 31385  | 31373  | 31373  | 27247  | 27247  |
-| 16 | 65535  | 52565  | 56501  | 47729  | 59973  | 62739  | 55831  | 55831  |
+<table>
+	<thead>
+		<tr>
+			<th rowspan="2">$$|A|$$</th>
+			<th colspan="8">$$|k|$$</th>
+		</tr>
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+			<th>7</th>
+			<th>8</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>2</th>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<th>3</th>
+			<td>7</td>
+			<td>7</td>
+			<td>7</td>
+			<td>7</td>
+			<td>7</td>
+			<td>7</td>
+			<td>7</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<th>4</th>
+			<td>15</td>
+			<td>13</td>
+			<td>13</td>
+			<td>13</td>
+			<td>13</td>
+			<td>13</td>
+			<td>13</td>
+			<td>13</td>
+		</tr>
+		<tr>
+			<th>5</th>
+			<td>31</td>
+			<td>29</td>
+			<td>29</td>
+			<td>27</td>
+			<td>29</td>
+			<td>29</td>
+			<td>29</td>
+			<td>29</td>
+		</tr>
+		<tr>
+			<th>6</th>
+			<td>63</td>
+			<td>53</td>
+			<td>45</td>
+			<td>45</td>
+			<td>45</td>
+			<td>45</td>
+			<td>59</td>
+			<td>59</td>
+		</tr>
+		<tr>
+			<th>7</th>
+			<td>127</td>
+			<td>117</td>
+			<td>89</td>
+			<td>89</td>
+			<td>117</td>
+			<td>115</td>
+			<td>115</td>
+			<td>115</td>
+		</tr>
+		<tr>
+			<th>8</th>
+			<td>255</td>
+			<td>213</td>
+			<td>229</td>
+			<td>229</td>
+			<td>233</td>
+			<td>233</td>
+			<td>217</td>
+			<td>233</td>
+		</tr>
+		<tr>
+			<th>9</th>
+			<td>511</td>
+			<td>469</td>
+			<td>467</td>
+			<td>467</td>
+			<td>443</td>
+			<td>471</td>
+			<td>471</td>
+			<td>487</td>
+		</tr>
+		<tr>
+			<th>10</th>
+			<td>1023</td>
+			<td>853</td>
+			<td>917</td>
+			<td>933</td>
+			<td>933</td>
+			<td>809</td>
+			<td>933</td>
+			<td>857</td>
+		</tr>
+		<tr>
+			<th>11</th>
+			<td>2047</td>
+			<td>1877</td>
+			<td>1837</td>
+			<td>1867</td>
+			<td>1909</td>
+			<td>1899</td>
+			<td>1803</td>
+			<td>1939</td>
+		</tr>
+		<tr>
+			<th>12</th>
+			<td>4095</td>
+			<td>3285</td>
+			<td>3673</td>
+			<td>3737</td>
+			<td>3787</td>
+			<td>3813</td>
+			<td>3813</td>
+			<td>3813</td>
+		</tr>
+		<tr>
+			<th>13</th>
+			<td>8191</td>
+			<td>6613</td>
+			<td>7349</td>
+			<td>6777</td>
+			<td>7085</td>
+			<td>7837</td>
+			<td>7637</td>
+			<td>7463</td>
+		</tr>
+		<tr>
+			<th>14</th>
+			<td>16383</td>
+			<td>13141</td>
+			<td>13779</td>
+			<td>14937</td>
+			<td>15221</td>
+			<td>14159</td>
+			<td>13963</td>
+			<td>13963</td>
+		</tr>
+		<tr>
+			<th>15</th>
+			<td>32767</td>
+			<td>26453</td>
+			<td>23733</td>
+			<td>31385</td>
+			<td>31373</td>
+			<td>31373</td>
+			<td>27247</td>
+			<td>27247</td>
+		</tr>
+		<tr>
+			<th>16</th>
+			<td>65535</td>
+			<td>52565</td>
+			<td>56501</td>
+			<td>47729</td>
+			<td>59973</td>
+			<td>62739</td>
+			<td>55831</td>
+			<td>55831</td>
+		</tr>
+	</tbody>
+</table>
 
 ## Contributing and Feedback
 
