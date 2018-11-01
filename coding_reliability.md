@@ -17,17 +17,19 @@ For each combination of data bit width ($$k$$) and bit width of the parameter $$
 1. For a given data width $$k$$ and some $$A$$, this functions returns the lower bound of the detectable bit flip weight:<br/>$$\eta(k,A) = \max b \quad, \varphi_x^{k,A}=0 \wedge 0 \leq x \leq b$$<br/>This essentially defines the candidate set.
 2. From that candidate set, we select that $$A$$ which has the lowest first non-zero probability of silent data corruption (SDC):<br/>$$\psi(k,A) = \varphi_{b=\eta(k,A)+1}^{k,A}$$
 
-Using these optimization functions, we define our optimality criterion:
+Using these target functions, we define our optimization problem:
 
 $$\Psi_\eta(k,h)=\max \big( \eta(k,A), 1 - \psi(k,A) \big) \quad,~|A| = h$$
 
 It takes all (computed) $$A$$s of a given parameter bit width ($$k$$) and checks for the largest minimal detectable bit flip weight (the guarantee to detect all $$1 \dots x$$-bit flips, with maximum x among the available $$A$$s) and the smallest first non-zero SDC probability.
 
-<table>
+In the following four tables we list all of the <em>golden $$A$$s</em> determined through the above optimization problem. In small font and parantheses we also list for the given combination of $$A$$ and $$k$$ the minimal detectable bit flip weight.
+
+<table class="listofA">
 	<thead>
 		<tr>
 			<th rowspan="2">$$|A|$$</th>
-			<th colspan="8">$$|k|$$</th>
+			<th colspan="8">$$k$$</th>
 		</tr>
 		<tr>
 			<th>1</th>
@@ -43,171 +45,728 @@ It takes all (computed) $$A$$s of a given parameter bit width ($$k$$) and checks
 	<tbody>
 		<tr>
 			<th>2</th>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
 		</tr>
 		<tr>
 			<th>3</th>
-			<td>7</td>
-			<td>7</td>
-			<td>7</td>
-			<td>7</td>
-			<td>7</td>
-			<td>7</td>
-			<td>7</td>
-			<td>7</td>
+			<td>7 <small>(2)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
 		</tr>
 		<tr>
 			<th>4</th>
-			<td>15</td>
-			<td>13</td>
-			<td>13</td>
-			<td>13</td>
-			<td>13</td>
-			<td>13</td>
-			<td>13</td>
-			<td>13</td>
+			<td>15 <small>(3)</small></td>
+			<td>13 <small>(2)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
 		</tr>
 		<tr>
 			<th>5</th>
-			<td>31</td>
-			<td>29</td>
-			<td>29</td>
-			<td>27</td>
-			<td>29</td>
-			<td>29</td>
-			<td>29</td>
-			<td>29</td>
+			<td>31 <small>(4)</small></td>
+			<td>29 <small>(2)</small></td>
+			<td>29 <small>(2)</small></td>
+			<td>27 <small>(2)</small></td>
+			<td>29 <small>(2)</small></td>
+			<td>29 <small>(2)</small></td>
+			<td>29 <small>(2)</small></td>
+			<td>29 <small>(2)</small></td>
 		</tr>
 		<tr>
 			<th>6</th>
-			<td>63</td>
-			<td>53</td>
-			<td>45</td>
-			<td>45</td>
-			<td>45</td>
-			<td>45</td>
-			<td>59</td>
-			<td>59</td>
+			<td>63 <small>(5)</small></td>
+			<td>53 <small>(3)</small></td>
+			<td>45 <small>(3)</small></td>
+			<td>45 <small>(2)</small></td>
+			<td>45 <small>(2)</small></td>
+			<td>45 <small>(2)</small></td>
+			<td>59 <small>(2)</small></td>
+			<td>59 <small>(2)</small></td>
 		</tr>
 		<tr>
 			<th>7</th>
-			<td>127</td>
-			<td>117</td>
-			<td>89</td>
-			<td>89</td>
-			<td>117</td>
-			<td>115</td>
-			<td>115</td>
-			<td>115</td>
+			<td>127 <small>(6)</small></td>
+			<td>117 <small>(3)</small></td>
+			<td>117 <small>(3)</small></td>
+			<td>89 <small>(3)</small></td>
+			<td>117 <small>(3)</small></td>
+			<td>115 <small>(2)</small></td>
+			<td>115 <small>(2)</small></td>
+			<td>115 <small>(2)</small></td>
 		</tr>
 		<tr>
 			<th>8</th>
-			<td>255</td>
-			<td>213</td>
-			<td>229</td>
-			<td>229</td>
-			<td>233</td>
-			<td>233</td>
-			<td>217</td>
-			<td>233</td>
+			<td>255 <small>(7)</small></td>
+			<td>213 <small>(4)</small></td>
+			<td>229 <small>(3)</small></td>
+			<td>229 <small>(3)</small></td>
+			<td>233 <small>(3)</small></td>
+			<td>233 <small>(3)</small></td>
+			<td>217 <small>(3)</small></td>
+			<td>233 <small>(3)</small></td>
 		</tr>
 		<tr>
 			<th>9</th>
-			<td>511</td>
-			<td>469</td>
-			<td>467</td>
-			<td>467</td>
-			<td>443</td>
-			<td>471</td>
-			<td>471</td>
-			<td>487</td>
+			<td>511 <small>(8)</small></td>
+			<td>469 <small>(4)</small></td>
+			<td>467 <small>(4)</small></td>
+			<td>467 <small>(3)</small></td>
+			<td>443 <small>(3)</small></td>
+			<td>471 <small>(3)</small></td>
+			<td>471 <small>(3)</small></td>
+			<td>487 <small>(3)</small></td>
 		</tr>
 		<tr>
 			<th>10</th>
-			<td>1023</td>
-			<td>853</td>
-			<td>917</td>
-			<td>933</td>
-			<td>933</td>
-			<td>809</td>
-			<td>933</td>
-			<td>857</td>
+			<td>1023 <small>(9)</small></td>
+			<td>853 <small>(5)</small></td>
+			<td>917 <small>(4)</small></td>
+			<td>933 <small>(4)</small></td>
+			<td>933 <small>(4)</small></td>
+			<td>809 <small>(3)</small></td>
+			<td>933 <small>(3)</small></td>
+			<td>857 <small>(3)</small></td>
 		</tr>
 		<tr>
 			<th>11</th>
-			<td>2047</td>
-			<td>1877</td>
-			<td>1837</td>
-			<td>1867</td>
-			<td>1909</td>
-			<td>1899</td>
-			<td>1803</td>
-			<td>1939</td>
+			<td>2047 <small>(10)</small></td>
+			<td>1877 <small>(5)</small></td>
+			<td>1837 <small>(5)</small></td>
+			<td>1867 <small>(4)</small></td>
+			<td>1909 <small>(4)</small></td>
+			<td>1899 <small>(4)</small></td>
+			<td>1803 <small>(4)</small></td>
+			<td>1939 <small>(4)</small></td>
 		</tr>
 		<tr>
 			<th>12</th>
-			<td>4095</td>
-			<td>3285</td>
-			<td>3673</td>
-			<td>3737</td>
-			<td>3787</td>
-			<td>3813</td>
-			<td>3813</td>
-			<td>3813</td>
+			<td>4095 <small>(11)</small></td>
+			<td>3285 <small>(6)</small></td>
+			<td>3673 <small>(5)</small></td>
+			<td>3737 <small>(4)</small></td>
+			<td>3787 <small>(4)</small></td>
+			<td>3813 <small>(4)</small></td>
+			<td>3813 <small>(4)</small></td>
+			<td>3813 <small>(4)</small></td>
 		</tr>
 		<tr>
 			<th>13</th>
-			<td>8191</td>
-			<td>6613</td>
-			<td>7349</td>
-			<td>6777</td>
-			<td>7085</td>
-			<td>7837</td>
-			<td>7637</td>
-			<td>7463</td>
+			<td>8191 <small>(12)</small></td>
+			<td>6613 <small>(6)</small></td>
+			<td>7349 <small>(6)</small></td>
+			<td>6777 <small>(5)</small></td>
+			<td>7085 <small>(5)</small></td>
+			<td>7837 <small>(5)</small></td>
+			<td>7637 <small>(4)</small></td>
+			<td>7463 <small>(4)</small></td>
 		</tr>
 		<tr>
 			<th>14</th>
-			<td>16383</td>
-			<td>13141</td>
-			<td>13779</td>
-			<td>14937</td>
-			<td>15221</td>
-			<td>14159</td>
-			<td>13963</td>
-			<td>13963</td>
+			<td>16383 <small>(13)</small></td>
+			<td>13141 <small>(7)</small></td>
+			<td>13779 <small>(6)</small></td>
+			<td>14937 <small>(5)</small></td>
+			<td>15221 <small>(5)</small></td>
+			<td>14159 <small>(5)</small></td>
+			<td>13963 <small>(5)</small></td>
+			<td>13963 <small>(5)</small></td>
 		</tr>
 		<tr>
 			<th>15</th>
-			<td>32767</td>
-			<td>26453</td>
-			<td>23733</td>
-			<td>31385</td>
-			<td>31373</td>
-			<td>31373</td>
-			<td>27247</td>
-			<td>27247</td>
+			<td>32767 <small>(14)</small></td>
+			<td>26453 <small>(7)</small></td>
+			<td>23733 <small>(7)</small></td>
+			<td>31385 <small>(6)</small></td>
+			<td>31373 <small>(6)</small></td>
+			<td>31373 <small>(5)</small></td>
+			<td>27247 <small>(5)</small></td>
+			<td>27247 <small>(5)</small></td>
 		</tr>
 		<tr>
 			<th>16</th>
-			<td>65535</td>
-			<td>52565</td>
-			<td>56501</td>
-			<td>47729</td>
-			<td>59973</td>
-			<td>62739</td>
-			<td>55831</td>
-			<td>55831</td>
+			<td>65535 <small>(15)</small></td>
+			<td>52565 <small>(8)</small></td>
+			<td>56501 <small>(7)</small></td>
+			<td>47729 <small>(6)</small></td>
+			<td>59973 <small>(6)</small></td>
+			<td>62739 <small>(6)</small></td>
+			<td>55831 <small>(6)</small></td>
+			<td>55831 <small>(6)</small></td>
 		</tr>
 	</tbody>
 </table>
+<table class="listofA">
+	<thead>
+		<tr>
+			<th rowspan="2">$$|A|$$</th>
+			<th colspan="8">$$k$$</th>
+		</tr>
+		<tr>
+			<th>9</th>
+			<th>10</th>
+			<th>11</th>
+			<th>12</th>
+			<th>13</th>
+			<th>14</th>
+			<th>15</th>
+			<th>16</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>2</th>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>3</th>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>4</th>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>5</th>
+			<td>29 <small>(2)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>6</th>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>7</th>
+			<td>123 <small>(2)</small></td>
+			<td>123 <small>(2)</small></td>
+			<td>123 <small>(2)</small></td>
+			<td>123 <small>(2)</small></td>
+			<td>123 <small>(2)</small></td>
+			<td>119 <small>(2)</small></td>
+			<td>119 <small>(2)</small></td>
+			<td>119 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>8</th>
+			<td>185 <small>(3)</small></td>
+			<td>185 <small>(3)</small></td>
+			<td>233 <small>(2)</small></td>
+			<td>215 <small>(2)</small></td>
+			<td>215 <small>(2)</small></td>
+			<td>233 <small>(2)</small></td>
+			<td>233 <small>(2)</small></td>
+			<td>233 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>9</th>
+			<td>487 <small>(3)</small></td>
+			<td>451 <small>(3)</small></td>
+			<td>451 <small>(3)</small></td>
+			<td>463 <small>(3)</small></td>
+			<td>463 <small>(3)</small></td>
+			<td>463 <small>(3)</small></td>
+			<td>463 <small>(3)</small></td>
+			<td>463 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>10</th>
+			<td>857 <small>(3)</small></td>
+			<td>857 <small>(3)</small></td>
+			<td>857 <small>(3)</small></td>
+			<td>857 <small>(3)</small></td>
+			<td>947 <small>(3)</small></td>
+			<td>947 <small>(3)</small></td>
+			<td>947 <small>(3)</small></td>
+			<td>947 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>11</th>
+			<td>1939 <small>(4)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>12</th>
+			<td>3621 <small>(4)</small></td>
+			<td>3739 <small>(4)</small></td>
+			<td>3739 <small>(4)</small></td>
+			<td>3737 <small>(4)</small></td>
+			<td>3349 <small>(4)</small></td>
+			<td>3349 <small>(3)</small></td>
+			<td>3349 <small>(3)</small></td>
+			<td>3349 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>13</th>
+			<td>5729 <small>(4)</small></td>
+			<td>6717 <small>(4)</small></td>
+			<td>6717 <small>(4)</small></td>
+			<td>6717 <small>(4)</small></td>
+			<td>7413 <small>(4)</small></td>
+			<td>6717 <small>(4)</small></td>
+			<td>7785 <small>(4)</small></td>
+			<td>7785 <small>(4)</small></td>
+		</tr>
+		<tr>
+			<th>14</th>
+			<td>15717 <small>(5)</small></td>
+			<td>15469 <small>(4)</small></td>
+			<td>14139 <small>(4)</small></td>
+			<td>14139 <small>(4)</small></td>
+			<td>14139 <small>(4)</small></td>
+			<td>14139 <small>(4)</small></td>
+			<td>14139 <small>(4)</small></td>
+			<td>14781 <small>(4)</small></td>
+		</tr>
+		<tr>
+			<th>15</th>
+			<td>27425 <small>(5)</small></td>
+			<td>27425 <small>(5)</small></td>
+			<td>27425 <small>(5)</small></td>
+			<td>29925 <small>(5)</small></td>
+			<td>27825 <small>(5)</small></td>
+			<td>28619 <small>(4)</small></td>
+			<td>28183 <small>(4)</small></td>
+			<td>28183 <small>(4)</small></td>
+		</tr>
+		<tr>
+			<th>16</th>
+			<td>55831 <small>(6)</small></td>
+			<td>59965 <small>(5)</small></td>
+			<td>58901 <small>(5)</small></td>
+			<td>62749 <small>(5)</small></td>
+			<td>62749 <small>(5)</small></td>
+			<td>63877 <small>(5)</small></td>
+			<td>63877 <small>(5)</small></td>
+			<td>63877 <small>(5)</small></td>
+		</tr>
+	</tbody>
+</table>
+<table class="listofA">
+	<thead>
+		<tr>
+			<th rowspan="2">$$|A|$$</th>
+			<th colspan="8">$$k$$</th>
+		</tr>
+		<tr>
+			<th>17</th>
+			<th>18</th>
+			<th>19</th>
+			<th>20</th>
+			<th>21</th>
+			<th>22</th>
+			<th>23</th>
+			<th>24</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>2</th>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>3</th>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>4</th>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>5</th>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>6</th>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+			<td>61 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>7</th>
+			<td>119 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>8</th>
+			<td>233 <small>(2)</small></td>
+			<td>233 <small>(2)</small></td>
+			<td>233 <small>(2)</small></td>
+			<td>233 <small>(2)</small></td>
+			<td>233 <small>(2)</small></td>
+			<td>237 <small>(2)</small></td>
+			<td>237 <small>(2)</small></td>
+			<td>237 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>9</th>
+			<td>393 <small>(3)</small></td>
+			<td>393 <small>(2)</small></td>
+			<td>393 <small>(2)</small></td>
+			<td>393 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>10</th>
+			<td>947 <small>(3)</small></td>
+			<td>947 <small>(3)</small></td>
+			<td>947 <small>(3)</small></td>
+			<td>985 <small>(3)</small></td>
+			<td>985 <small>(3)</small></td>
+			<td>985 <small>(3)</small></td>
+			<td>985 <small>(3)</small></td>
+			<td>981 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>11</th>
+			<td>1909 <small>(3)</small></td>
+			<td>1909 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1909 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>12</th>
+			<td>3349 <small>(3)</small></td>
+			<td>3349 <small>(3)</small></td>
+			<td>3349 <small>(3)</small></td>
+			<td>3091 <small>(3)</small></td>
+			<td>3091 <small>(3)</small></td>
+			<td>3091 <small>(3)</small></td>
+			<td>3091 <small>(3)</small></td>
+			<td>3829 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>13</th>
+			<td>7785 <small>(4)</small></td>
+			<td>7785 <small>(4)</small></td>
+			<td>7985 <small>(4)</small></td>
+			<td>7985 <small>(4)</small></td>
+			<td>6311 <small>(3)</small></td>
+			<td>6311 <small>(3)</small></td>
+			<td>6311 <small>(3)</small></td>
+			<td>6311 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>14</th>
+			<td>14781 <small>(4)</small></td>
+			<td>15207 <small>(4)</small></td>
+			<td>16089 <small>(4)</small></td>
+			<td>16089 <small>(4)</small></td>
+			<td>15507 <small>(4)</small></td>
+			<td>15993 <small>(4)</small></td>
+			<td>15993 <small>(4)</small></td>
+			<td>15993 <small>(4)</small></td>
+		</tr>
+		<tr>
+			<th>15</th>
+			<td>32343 <small>(4)</small></td>
+			<td>32343 <small>(4)</small></td>
+			<td>32343 <small>(4)</small></td>
+			<td>32343 <small>(4)</small></td>
+			<td>30987 <small>(4)</small></td>
+			<td>30987 <small>(4)</small></td>
+			<td>30987 <small>(4)</small></td>
+			<td>29675 <small>(4)</small></td>
+		</tr>
+		<tr>
+			<th>16</th>
+			<td>63859 <small>(5)</small></td>
+			<td>63859 <small>(5)</small></td>
+			<td>58659 <small>(4)</small></td>
+			<td>58659 <small>(4)</small></td>
+			<td>58659 <small>(4)</small></td>
+			<td>58659 <small>(4)</small></td>
+			<td>58659 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+		</tr>
+	</tbody>
+</table>
+<table class="listofA">
+	<thead>
+		<tr>
+			<th rowspan="2">$$|A|$$</th>
+			<th colspan="8">$$k$$</th>
+		</tr>
+		<tr>
+			<th>25</th>
+			<th>26</th>
+			<th>27</th>
+			<th>28</th>
+			<th>29</th>
+			<th>30</th>
+			<th>31</th>
+			<th>32</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>2</th>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+			<td>3 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>3</th>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+			<td>7 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>4</th>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+			<td>13 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>5</th>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+			<td>29 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>6</th>
+			<td>61 <small>(1)</small></td>
+			<td>61 <small>(1)</small></td>
+			<td>61 <small>(1)</small></td>
+			<td>61 <small>(1)</small></td>
+			<td>61 <small>(1)</small></td>
+			<td>61 <small>(1)</small></td>
+			<td>61 <small>(1)</small></td>
+			<td>61 <small>(1)</small></td>
+		</tr>
+		<tr>
+			<th>7</th>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>111 <small>(2)</small></td>
+			<td>125 <small>(2)</small></td>
+			<td>125 <small>(2)</small></td>
+			<td>125 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>8</th>
+			<td>225 <small>(2)</small></td>
+			<td>225 <small>(2)</small></td>
+			<td>225 <small>(2)</small></td>
+			<td>225 <small>(2)</small></td>
+			<td>225 <small>(2)</small></td>
+			<td>225 <small>(2)</small></td>
+			<td>225 <small>(2)</small></td>
+			<td>225 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>9</th>
+			<td>423 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+			<td>423 <small>(2)</small></td>
+			<td>445 <small>(2)</small></td>
+			<td>445 <small>(2)</small></td>
+			<td>445 <small>(2)</small></td>
+		</tr>
+		<tr>
+			<th>10</th>
+			<td>981 <small>(3)</small></td>
+			<td>981 <small>(3)</small></td>
+			<td>951 <small>(3)</small></td>
+			<td>951 <small>(3)</small></td>
+			<td>835 <small>(3)</small></td>
+			<td>835 <small>(3)</small></td>
+			<td>881 <small>(3)</small></td>
+			<td>881 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>11</th>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>1939 <small>(3)</small></td>
+			<td>2029 <small>(3)</small></td>
+			<td>2029 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>12</th>
+			<td>3829 <small>(3)</small></td>
+			<td>3829 <small>(3)</small></td>
+			<td>3829 <small>(3)</small></td>
+			<td>3829 <small>(3)</small></td>
+			<td>3829 <small>(3)</small></td>
+			<td>3829 <small>(3)</small></td>
+			<td>3973 <small>(3)</small></td>
+			<td>3973 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>13</th>
+			<td>6311 <small>(3)</small></td>
+			<td>7841 <small>(3)</small></td>
+			<td>7841 <small>(3)</small></td>
+			<td>7841 <small>(3)</small></td>
+			<td>7841 <small>(3)</small></td>
+			<td>7841 <small>(3)</small></td>
+			<td>7841 <small>(3)</small></td>
+			<td>7841 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>14</th>
+			<td>15685 <small>(4)</small></td>
+			<td>15203 <small>(4)</small></td>
+			<td>15203 <small>(4)</small></td>
+			<td>15203 <small>(3)</small></td>
+			<td>15203 <small>(3)</small></td>
+			<td>15203 <small>(3)</small></td>
+			<td>15203 <small>(3)</small></td>
+			<td>15331 <small>(3)</small></td>
+		</tr>
+		<tr>
+			<th>15</th>
+			<td>29685 <small>(4)</small></td>
+			<td>29685 <small>(4)</small></td>
+			<td>29685 <small>(4)</small></td>
+			<td>29685 <small>(4)</small></td>
+			<td>29685 <small>(4)</small></td>
+			<td>30597 <small>(4)</small></td>
+			<td>30221 <small>(4)</small></td>
+			<td>30221 <small>(4)</small></td>
+		</tr>
+		<tr>
+			<th>16</th>
+			<td>64311 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+			<td>64311 <small>(4)</small></td>
+		</tr>
+	</tbody>
+</table>
+
+
 
 ## Contributing and Feedback
 

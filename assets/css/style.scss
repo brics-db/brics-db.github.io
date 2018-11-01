@@ -196,3 +196,23 @@ ul.people {
     }
   }
 }
+
+body {
+  table.listofA {
+    th {
+      font-size:smaller;
+      padding: 5pt 5pt 5pt 0pt;
+      text-align: center;
+    }
+    td {
+      font-size:smaller;
+      padding: 5pt;
+      text-align: right;
+      border-left: 1pt dotted gray;
+
+      small {
+        font-size:smaller;
+      }
+    }
+  }
+}
